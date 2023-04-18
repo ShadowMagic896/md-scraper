@@ -2,9 +2,16 @@
 Automatically scrapes and interacts with memedroid
 
 # Disclaimer
-I, ShadowMagic896, am not responsible for any damages, bans, shadowbans, misuse, fines, or any other punishment or results, direct or 
-indirect, resulting from use of this software.
-Use at your own risk. **Use of this software is prohibited under Novagecko's Terms of Service.**
+**Use of this software is prohibited under [Memedroid's Terms of Service](https://www.memedroid.com/tos).**
+"the software": md-scraper, developed by ShadowMagic896
+"the developer": ShadowMagic896
+The software provided by the developer is for informational and educational purposes only. Any use of the software by the user is at their own risk and discretion. The developer is not responsible for any consequences that may arise from the use of the software, including but not limited to loss of data, damages to hardware or software, or any other losses incurred by the user.
+
+The developer makes no warranties, expressed or implied, with respect to the software, including but not limited to the fitness of the software for any particular purpose or non-infringement. The user of the software assumes all responsibility and liability for their use of the software, and any consequences that may result from such use.
+
+By using the software, the user agrees to indemnify and hold harmless the developer from any and all claims, damages, liabilities, costs, and expenses arising from their use of the software.
+
+In addition, the user agrees to be bound by the terms of the attached LICENSE file, which governs the use, modification, and distribution of the software. The user should carefully read the LICENSE file before using the software, as it contains important information about the user's rights and obligations with respect to the software.
 
 ## Functions
 As of writing, the only supported function is a simple cycle that continues through memes and upvotes every 
