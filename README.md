@@ -3,8 +3,11 @@ Automatically scrapes and interacts with memedroid
 
 # Disclaimer
 **Use of this software is prohibited under [Memedroid's Terms of Service](https://www.memedroid.com/tos).**
+
 "the software": md-scraper, developed by ShadowMagic896
+
 "the developer": ShadowMagic896
+
 The software provided by the developer is for informational and educational purposes only. Any use of the software by the user is at their own risk and discretion. The developer is not responsible for any consequences that may arise from the use of the software, including but not limited to loss of data, damages to hardware or software, or any other losses incurred by the user.
 
 The developer makes no warranties, expressed or implied, with respect to the software, including but not limited to the fitness of the software for any particular purpose or non-infringement. The user of the software assumes all responsibility and liability for their use of the software, and any consequences that may result from such use.
