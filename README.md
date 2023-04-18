@@ -37,5 +37,4 @@ Execution is very simple.
 2. Enter Memedroid username/email and password when prompted. These are never saved and are deleted immeditely 
 after being sent to memedroid.com. However, I still **HIGHLY recommend you use a new or throwaway account instead of**
 **one you use regularly**.
-3. That's it! There will be terminal output letting you know if anything went wrong. Please DM Cookie?#1256 with any
-questions regarding use of this.
+3. That's it! The rest of the terminal prompts are as straight-forward as can be. There will be terminal output letting you know if anything went wrong. Please DM Cookie?#1256 on Discord with any questions, comments, or concerns regarding the software. Or if you just wanna talk :)
