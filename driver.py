@@ -7,13 +7,13 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from selenium.common.exceptions import WebDriverException
-from settings import bypass_confim_dialogs, firefox_binary_location, geckodriver_location
+from settings import bypass_confim_dialogs, firefox_binary_location, geckodriver_location, headless
 
 from bs4 import BeautifulSoup
 
 class _AsyncFirefox(SeleniumFirefox):
 
-    def __init__(self, headless: bool = False):
+    def __init__(self):
         super().__init__()
         options = FirefoxOptions()
         options.headless = headless
