@@ -7,11 +7,9 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from selenium.common.exceptions import WebDriverException
+from settings import bypass_confim_dialogs, firefox_binary_location, geckodriver_location
 
 from bs4 import BeautifulSoup
-
-
-pass_prompts: bool = True
 
 class _AsyncFirefox(SeleniumFirefox):
 
@@ -19,15 +17,14 @@ class _AsyncFirefox(SeleniumFirefox):
         super().__init__()
         options = FirefoxOptions()
         options.headless = headless
-        options.binary_location = "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+        options.binary_location = firefox_binary_location
 
         driver = SeleniumFirefox(
             options=options,
-            executable_path="C:\\Program Files\\Mozilla Firefox\\geckodriver.exe",
+            executable_path=geckodriver_location,
             firefox_profile=FirefoxProfile(),
         )
         profile: FirefoxProfile = driver.firefox_profile # type: ignore
-        # profile.add_extension("services/modify_headers_extension.xpi")
 
         self._driver = driver
     
@@ -121,8 +118,8 @@ class MemedroidFirefox(_AsyncFirefox):
             input("Username / Email: "),
             input("Password: ")
         )
-        if input("Do you want to preload a meme? (y/n): ") == "y":
-            load = int(input("Meme ID: "))
+        if input("Do you want to preload a meme? If no, the 'Latest Memes' stream will be used. (y/n): ") == "y":
+            load = int(input("Meme ID (6-digit Integer): "))
         else:
             load = await self.get_latest_id()
         await self.goto_meme(load)
@@ -156,7 +153,7 @@ class MemedroidFirefox(_AsyncFirefox):
 
 
 def cinput(prompt: str = "") -> str:
-    if not pass_prompts:
+    if not bypass_confim_dialogs:
         return input(prompt)
     return "\n"
 
